@@ -1,10 +1,10 @@
-# URL Exist
+# URL Accessible
 
 Check if a URL accessible.
 
 ### Install
 
-` yarn add url-accessible -S`
+`yarn add url-accessible -S`
 
 ### Usage
 
@@ -23,6 +23,6 @@ await urlAccessible('http://localhost:8080/')
 await urlAccessible('not a url')
 //=> false
 
-await urlAccessible('not a url')
+await urlAccessible('url')
 //=> false
 ```

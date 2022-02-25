@@ -47,3 +47,5 @@ const urlAccessible = (url) => {
     req.end()
   })
 }
+
+module.exports = urlAccessible;
