@@ -22,7 +22,4 @@ await urlAccessible('http://localhost:8080/')
 
 await urlAccessible('not a url')
 //=> false
-
-await urlAccessible('url')
-//=> false
 ```

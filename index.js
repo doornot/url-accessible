@@ -1,5 +1,5 @@
-const { URL, parse } = require('url')
 const http = require('http')
+const { URL, parse } = require('url')
 
 const isUrl = (str) => {
   if (!str || typeof str !== 'string') {
@@ -13,7 +13,6 @@ const isUrl = (str) => {
     new URL(str)
     return true
   } catch (err) {
-    // console.log('[URL err]', err)
     return false
   }
 }
@@ -35,17 +34,14 @@ const urlAccessible = (url) => {
       path: pathname,
       port: port || 80
     }
-    // console.log('===options: ', options)
     const req = http.request(options, (res) => {
-      // console.log('[urlAccessible res.statusCode]', res.statusCode)
       resolve(res.statusCode < 400)
     })
     req.on('error', (error) => {
-      // console.log('[urlAccessible error]', error)
       resolve(false)
     })
     req.end()
   })
 }
 
-module.exports = urlAccessible;
+module.exports = urlAccessible

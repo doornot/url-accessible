@@ -1,6 +1,9 @@
 {
   "name": "url-accessible",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "description": "url accessible",
   "main": "index.js",
+  "repository": "https://github.com/doornot/url-accessible",
+  "author": "KevinWang",
   "license": "MIT"
 }
